@@ -22,10 +22,10 @@ public class App extends Application {
       @Override
     public void start(Stage stage) throws IOException {
 
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("main-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MainView.fxml"));
         Pane root = fxmlLoader.load();
         Scene scene = new Scene(root);
-        scene.setFill(Color.TRANSPARENT);
+        scene.setFill(Color.WHITE);
         stage.initStyle(StageStyle.TRANSPARENT);
         stage.setScene(scene);
         stage.show();
