@@ -9,9 +9,12 @@ import javafx.stage.StageStyle;
 
 public class NoTileBar {
 
+    // create this class remove code repeatition
+    // this class is used for not tile bar
+
     private double xOffset = 0;
     private double yOffset = 0;
-    
+
     public void notileBar(String fxmlFileName) throws Exception{
 
         Stage  stage = new Stage();
