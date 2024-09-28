@@ -4,7 +4,10 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.IOException;
 
@@ -13,13 +16,29 @@ import java.io.IOException;
  */
 public class App extends Application {
 
-    private static Scene scene;
+    private double xOffset = 0;
+    private double yOffset = 0;
 
-    @Override
+      @Override
     public void start(Stage stage) throws IOException {
-       Parent root = FXMLLoader.load(getClass().getResource(""));
-       stage.setScene(new Scene(root));
-       stage.show();
+
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("main-view.fxml"));
+        Pane root = fxmlLoader.load();
+        Scene scene = new Scene(root);
+        scene.setFill(Color.TRANSPARENT);
+        stage.initStyle(StageStyle.TRANSPARENT);
+        stage.setScene(scene);
+        stage.show();
+        // Add mouse pressed event to capture initial position
+        root.setOnMousePressed(event -> {
+            xOffset = event.getSceneX();
+            yOffset = event.getSceneY();
+        });
+        // Add mouse dragged event to move the stage
+        root.setOnMouseDragged(event -> {
+            stage.setX(event.getScreenX() - xOffset);
+            stage.setY(event.getScreenY() - yOffset);
+        });
     }
 
     public static void main(String[] args) throws Exception{
