@@ -1,6 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" />
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="617.0" prefWidth="825.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="699.0" fitWidth="943.0" layoutX="-11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/eliott-reyna-kcT-7cirBEw-unsplash.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="618.0" prefWidth="827.0" style="-fx-background-color: rgb(0,0,0,0.7);">
+         <children>
+            <JFXButton layoutX="308.0" layoutY="410.0" prefHeight="44.0" prefWidth="103.0" style="-fx-background-color: red; -fx-border-radius: 5; -fx-background-radius: 5;" text="Sign In" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <Text fill="WHITE" layoutX="169.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Discover Your Next Favourite Book">
+               <font>
+                  <Font name="Segoe UI Bold" size="31.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="102.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Escape into the world of literature at Novel Nook, your haven for book lovers Browse our curated collection " wrappingWidth="673.1038208007812">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="109.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="of bestsellers, classics, and hidden gemsLet our expert staff guide you in finding your next great read." wrappingWidth="630.68798828125">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="123.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Whether you're a fiction fanatic, a non-fiction nerd, or a poetry enthusiast, we've got you covered. ">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="265.0" layoutY="362.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Come, explore, and get lost in the pages with us.">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <JFXButton layoutX="432.0" layoutY="410.0" prefHeight="44.0" prefWidth="103.0" style="-fx-background-color: transparent; -fx-border-radius: 5; -fx-background-radius: 5; -fx-border-color: white; -fx-border-width: 2;" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
