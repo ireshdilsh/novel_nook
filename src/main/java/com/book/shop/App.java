@@ -9,7 +9,7 @@ public class App extends Application {
       @Override
     public void start(Stage stage) throws IOException {
         try {
-            new NoTileBar().notileBar("MainView.fxml");
+            new NoTileBar().notileBar("view/Login.fxml");
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -21,7 +21,7 @@ public class NoTileBar {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(fxmlFileName));
         Pane root = fxmlLoader.load();
         Scene scene = new Scene(root);
-        scene.setFill(Color.WHITE);
+        scene.setFill(Color.TRANSPARENT);
         stage.initStyle(StageStyle.TRANSPARENT);
         stage.setScene(scene);
         stage.show();

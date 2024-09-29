@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="574.0" prefWidth="802.0" style="-fx-background-color: white; -fx-border-radius: 10; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.book.shop.App">
+   <children>
+      <ImageView fitHeight="358.0" fitWidth="352.0" layoutX="401.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/gettyimages-1381521896-612x612-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="83.0" fitWidth="101.0" layoutX="538.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/novel-nook-book-shop-high-resolution-logo.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="5.0" layoutY="5.0" prefHeight="565.0" prefWidth="362.0" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-background-color: #fafafa;">
+         <children>
+            <ImageView fitHeight="264.0" fitWidth="236.0" layoutX="149.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Screenshot%20(24).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
